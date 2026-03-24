@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#ffe088",
+              "primary": "#003229",
+              "inverse-on-surface": "#f0f1f0",
+              "tertiary-container": "#cca72f",
+              "surface-tint": "#2b695a",
+              "on-tertiary-fixed": "#241a00",
+              "on-primary": "#ffffff",
+              "primary-fixed": "#b0efdd",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "primary-container": "#004b3e",
+              "on-error": "#ffffff",
+              "on-surface": "#191c1c",
+              "on-tertiary-container": "#4e3d00",
+              "secondary-container": "#fed488",
+              "tertiary-fixed-dim": "#e9c349",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary-fixed": "#261900",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#edeeed",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e1e3e2",
+              "error": "#ba1a1a",
+              "on-background": "#191c1c",
+              "outline-variant": "#bfc9c4",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffdea5",
+              "on-secondary-fixed-variant": "#5d4201",
+              "on-surface-variant": "#404945",
+              "surface-container-high": "#e7e8e7",
+              "surface-bright": "#f9f9f8",
+              "surface-variant": "#e1e3e2",
+              "on-secondary-container": "#785a1a",
+              "primary-fixed-dim": "#95d3c1",
+              "outline": "#707975",
+              "background": "#f9f9f8",
+              "on-tertiary-fixed-variant": "#574500",
+              "surface-dim": "#d9dad9",
+              "inverse-primary": "#95d3c1",
+              "inverse-surface": "#2e3131",
+              "tertiary": "#735c00",
+              "on-primary-container": "#7dbaa9",
+              "surface": "#f9f9f8",
+              "on-primary-fixed-variant": "#0a5043",
+              "secondary-fixed-dim": "#e9c176",
+              "secondary": "#775a19",
+              "on-primary-fixed": "#00201a"
+            },
+            fontFamily: {
+              "headline": ["Amiri", "Noto Serif", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .quran-gradient {
+            background: linear-gradient(135deg, #003229 0%, #004b3e 100%);
+        }
+        .geometric-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30-15 30-15-30z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-emerald-950/85 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full shadow-[0_12px_40px_-4px_rgba(0,50,41,0.06)]">
+<div class="flex items-center gap-4">
+<button class="p-2 text-emerald-50 hover:bg-emerald-900/40 transition-colors rounded-full active:scale-95 duration-150">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="text-2xl font-headline tracking-tight text-emerald-50">Hamdan</h1>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-800/50">
+<img class="w-full h-full object-cover" data-alt="User profile avatar portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJOmnQhwk-MFiRSOAl7NkOEgRFbBJmkdL4n1Apos97gPaWtlKvDwT6_tsH8KO81lAV0PWdleTAix2Yvu-v3mwchQMkzhpsR3I6mCVo_PAAimOCM5bOn22Ore10Lt3C83-r2gYV86sy9YEnThvCE4tbCP25luEtu_Q4EIPfc-jS-eOhjXbKtB_7olmx-q7E167NjUiHdOBUOH3nlmH3DLo7nFqGOOvOE9itHL6BortmHLfWflOpaJS6dQx2EJ-rIAUCL3FqDRXMKg"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Search Section -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="font-headline text-5xl md:text-6xl text-primary tracking-tight leading-tight">القرآن الكريم</h2>
+<p class="text-on-surface-variant mt-3 max-w-md font-medium">استكشف المخطوطة الإلهية من خلال السور والأجزاء والعلامات المرجعية.</p>
+</div>
+<div class="w-full md:w-96">
+<div class="relative group">
+<div class="absolute inset-y-0 right-4 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-surface-container-highest border-none rounded-lg py-4 pr-12 pl-4 focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-outline text-right" placeholder="ابحث عن سورة، آية أو كلمة مفتاحية" type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Recently Read & Bookmarked -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+<!-- Recently Read - Primary High Emphasis -->
+<div class="md:col-span-2 quran-gradient geometric-overlay rounded-xl p-8 relative overflow-hidden group">
+<div class="relative z-10 text-right">
+<div class="flex items-center justify-end gap-2 text-primary-fixed mb-4">
+<span class="text-xs font-bold uppercase tracking-widest font-label">آخر ما قرأت</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">history</span>
+</div>
+<div class="flex justify-between items-start flex-row-reverse">
+<div class="text-right">
+<h3 class="font-headline text-3xl text-white mb-1">الكهف</h3>
+<p class="text-primary-fixed-dim/80 text-sm italic mb-6">"The Cave"</p>
+<div class="flex items-center justify-end gap-4 text-white">
+<button class="flex items-center gap-2 bg-secondary text-on-secondary px-5 py-2.5 rounded-full font-bold text-sm hover:bg-tertiary transition-all active:scale-95">
+<span class="material-symbols-outlined text-sm rotate-180">arrow_forward</span>
+                                متابعة القراءة
+                            </button>
+<span class="bg-white/10 px-3 py-1 rounded-full text-xs font-medium backdrop-blur-md">آية ٤٥ / ١١٠</span>
+</div>
+</div>
+<span class="text-white/5 font-headline text-9xl absolute -left-4 -bottom-8 select-none pointer-events-none">١٨</span>
+</div>
+</div>
+</div>
+<!-- Bookmarks - Secondary Surface -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_12px_40px_-4px_rgba(0,50,41,0.04)] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+<span class="text-xs font-bold uppercase tracking-widest font-label">العلامات المرجعية</span>
+</div>
+<span class="text-xs font-bold text-outline">١٢ إجمالي</span>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center justify-between group cursor-pointer">
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-lg rotate-180">chevron_right</span>
+<div class="text-right">
+<p class="text-sm font-bold text-on-surface">السجدة</p>
+<p class="text-xs text-on-surface-variant">آية ١٥</p>
+</div>
+</li>
+<li class="flex items-center justify-between group cursor-pointer">
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors text-lg rotate-180">chevron_right</span>
+<div class="text-right">
+<p class="text-sm font-bold text-on-surface">يس</p>
+<p class="text-xs text-on-surface-variant">آية ١</p>
+</div>
+</li>
+</ul>
+</div>
+<button class="text-secondary text-sm font-bold mt-6 flex items-center justify-end gap-1 hover:underline">
+                عرض كل العلامات
+            </button>
+</div>
+</section>
+<!-- Surah Index List -->
+<section>
+<div class="flex items-center justify-between mb-8 border-b border-outline-variant/15 pb-4">
+<h3 class="font-headline text-2xl text-primary">فهرس السور</h3>
+<div class="flex gap-2">
+<button class="px-4 py-1.5 rounded-full bg-primary text-on-primary text-xs font-bold">بالرقم</button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant text-xs font-bold">أبجدي</button>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Surah Item 1 -->
+<div class="group bg-surface-container-low hover:bg-white transition-all p-6 rounded-xl flex items-center gap-6 cursor-pointer hover:shadow-xl hover:shadow-primary/5 border border-transparent hover:border-outline-variant/20">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/5 text-primary font-bold rounded-lg relative overflow-hidden shrink-0">
+<span class="relative z-10">١</span>
+<div class="absolute inset-0 opacity-10 geometric-overlay"></div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-bold text-lg group-hover:text-primary transition-colors">الفاتحة</h4>
+<span class="text-2xl font-serif text-primary">Al-Fatihah</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant">
+<span class="uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">brightness_7</span>
+                            مكية
+                        </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>٧ آيات</span>
+</div>
+</div>
+</div>
+<!-- Surah Item 2 -->
+<div class="group bg-surface-container-low hover:bg-white transition-all p-6 rounded-xl flex items-center gap-6 cursor-pointer hover:shadow-xl hover:shadow-primary/5 border border-transparent hover:border-outline-variant/20">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/5 text-primary font-bold rounded-lg relative overflow-hidden shrink-0">
+<span class="relative z-10">٢</span>
+<div class="absolute inset-0 opacity-10 geometric-overlay"></div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-bold text-lg group-hover:text-primary transition-colors">البقرة</h4>
+<span class="text-2xl font-serif text-primary">Al-Baqarah</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant">
+<span class="uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud</span>
+                            مدنية
+                        </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>٢٨٦ آية</span>
+</div>
+</div>
+</div>
+<!-- Surah Item 3 (Selected/Active State Demo) -->
+<div class="group bg-primary-container p-6 rounded-xl flex items-center gap-6 cursor-pointer shadow-lg shadow-primary/10 border-r-4 border-secondary">
+<div class="w-12 h-12 flex items-center justify-center bg-white/10 text-white font-bold rounded-lg shrink-0">
+<span>٣</span>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-bold text-lg text-white">آل عمران</h4>
+<span class="text-2xl font-serif text-white">Ali 'Imran</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-primary-fixed-dim">
+<span class="uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud</span>
+                            مدنية
+                        </span>
+<span class="w-1 h-1 rounded-full bg-white/20"></span>
+<span>٢٠٠ آية</span>
+</div>
+</div>
+</div>
+<!-- Surah Item 4 -->
+<div class="group bg-surface-container-low hover:bg-white transition-all p-6 rounded-xl flex items-center gap-6 cursor-pointer hover:shadow-xl hover:shadow-primary/5 border border-transparent hover:border-outline-variant/20">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/5 text-primary font-bold rounded-lg relative overflow-hidden shrink-0">
+<span class="relative z-10">٤</span>
+<div class="absolute inset-0 opacity-10 geometric-overlay"></div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-bold text-lg group-hover:text-primary transition-colors">النساء</h4>
+<span class="text-2xl font-serif text-primary">An-Nisa</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant">
+<span class="uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud</span>
+                            مدنية
+                        </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>١٧٦ آية</span>
+</div>
+</div>
+</div>
+<!-- Surah Item 5 -->
+<div class="group bg-surface-container-low hover:bg-white transition-all p-6 rounded-xl flex items-center gap-6 cursor-pointer hover:shadow-xl hover:shadow-primary/5 border border-transparent hover:border-outline-variant/20">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/5 text-primary font-bold rounded-lg relative overflow-hidden shrink-0">
+<span class="relative z-10">٥</span>
+<div class="absolute inset-0 opacity-10 geometric-overlay"></div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-baseline mb-1">
+<h4 class="font-bold text-lg group-hover:text-primary transition-colors">المائدة</h4>
+<span class="text-2xl font-serif text-primary">Al-Ma'idah</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-on-surface-variant">
+<span class="uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cloud</span>
+                            مدنية
+                        </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>١٢٠ آية</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-emerald-950/85 backdrop-blur-xl flex justify-around items-center px-4 pb-safe rounded-t-[1.5rem] z-50 shadow-[0_-12px_40px_-4px_rgba(0,50,41,0.1)]">
+<a class="flex flex-col items-center justify-center text-emerald-200/60 px-4 py-1.5 hover:text-amber-200 transition-all active:scale-90 duration-200" href="./index.html">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center text-amber-400 bg-emerald-800/50 rounded-2xl px-4 py-1.5 active:scale-90 duration-200" href="./Quran.html">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest">القرآن</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-200/60 px-4 py-1.5 hover:text-amber-200 transition-all active:scale-90 duration-200" href="./Qibla.html">
+<span class="material-symbols-outlined mb-1">explore</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest">القبلة</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-200/60 px-4 py-1.5 hover:text-amber-200 transition-all active:scale-90 duration-200" href="./Settings.html">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-label text-[10px] font-medium uppercase tracking-widest">الإعدادات</span>
+</a>
+</nav>
+<!-- Floating Sacred Bar (Prayer Times) -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[calc(100%-3rem)] max-w-md bg-emerald-900/40 backdrop-blur-2xl px-6 py-3 rounded-full flex items-center justify-between border border-white/10 z-40 flex-row-reverse">
+<div class="flex items-center gap-3 flex-row-reverse">
+<div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+<span class="text-xs font-bold text-white uppercase tracking-tighter">الصلاة القادمة: العصر</span>
+</div>
+<div class="flex items-center gap-2 flex-row-reverse">
+<span class="font-headline text-lg text-amber-400">٠٣:٤٥ م</span>
+<span class="text-[10px] text-emerald-200/70 font-bold uppercase">خلال ٤٢ د</span>
+</div>
+</div>
+</body></html>

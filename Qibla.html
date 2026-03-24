@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#ffe088",
+              "primary": "#003229",
+              "inverse-on-surface": "#f0f1f0",
+              "tertiary-container": "#cca72f",
+              "surface-tint": "#2b695a",
+              "on-tertiary-fixed": "#241a00",
+              "on-primary": "#ffffff",
+              "primary-fixed": "#b0efdd",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "primary-container": "#004b3e",
+              "on-error": "#ffffff",
+              "on-surface": "#191c1c",
+              "on-tertiary-container": "#4e3d00",
+              "secondary-container": "#fed488",
+              "tertiary-fixed-dim": "#e9c349",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary-fixed": "#261900",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#edeeed",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e1e3e2",
+              "error": "#ba1a1a",
+              "on-background": "#191c1c",
+              "outline-variant": "#bfc9c4",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffdea5",
+              "on-secondary-fixed-variant": "#5d4201",
+              "on-surface-variant": "#404945",
+              "surface-container-high": "#e7e8e7",
+              "surface-bright": "#f9f9f8",
+              "surface-variant": "#e1e3e2",
+              "on-secondary-container": "#785a1a",
+              "primary-fixed-dim": "#95d3c1",
+              "outline": "#707975",
+              "background": "#f9f9f8",
+              "on-tertiary-fixed-variant": "#574500",
+              "surface-dim": "#d9dad9",
+              "inverse-primary": "#95d3c1",
+              "inverse-surface": "#2e3131",
+              "tertiary": "#735c00",
+              "on-primary-container": "#7dbaa9",
+              "surface": "#f9f9f8",
+              "on-primary-fixed-variant": "#0a5043",
+              "secondary-fixed-dim": "#e9c176",
+              "secondary": "#775a19",
+              "on-primary-fixed": "#00201a"
+            },
+            fontFamily: {
+              "headline": ["Amiri", "Noto Serif", "serif"],
+              "body": ["Plus Jakarta Sans", "sans-serif"],
+              "label": ["Plus Jakarta Sans", "sans-serif"],
+              "noto-serif": ["Noto Serif", "serif"],
+              "plus-jakarta": ["Plus Jakarta Sans", "sans-serif"],
+              "amiri": ["Amiri", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .islamic-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l2.5 7.5L40 10l-7.5 2.5L30 20l-2.5-7.5L20 10l7.5-2.5L30 0zm0 40l2.5 7.5L40 50l-7.5 2.5L30 60l-2.5-7.5L20 50l7.5-2.5L30 40zM0 30l7.5 2.5L10 40l2.5-7.5L20 30l-7.5-2.5L10 20l-2.5 7.5L0 30zm40 0l7.5 2.5L50 40l2.5-7.5L60 30l-7.5-2.5L50 20l-2.5 7.5L40 30z' fill='%23003229' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        .compass-dial {
+            background: conic-gradient(from 0deg, transparent 0deg, rgba(119, 90, 25, 0.1) 90deg, transparent 180deg);
+        }
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<title>Qibla</title>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-emerald-950/85 backdrop-blur-xl dark:bg-emerald-950/90 shadow-[0_12px_40px_-4px_rgba(0,50,41,0.06)] flex justify-between items-center px-6 h-16">
+<div class="flex items-center gap-4">
+<button class="text-emerald-50 hover:bg-emerald-900/40 transition-colors rounded-full p-2 flex items-center justify-center active:scale-95 active:duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-2xl font-amiri font-bold tracking-tight text-emerald-50">Hamdan</h1>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-emerald-50/20">
+<img alt="ملف المستخدم" data-alt="Close up portrait of a smiling user" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhQMJ6UBTLtJtmbsgn1lPrNveTnoSpHz3WGDiQ1OLJKZM4Lr1_Rk7KF7qrnkFVje7FmFl2LaLVkmhDNAJeANoOChpnB0ndPckv-ZfNszyOvlge79OfpNIWx5nLZMLmbKa3z1uWJ6EiI2DReOUhoLePQTNFk57l3FqiumSSrwjCz1dcr7TQxIGuL4SF78iX7vAvU3ZSoi4GjYGwbQN69JALwxhxCTkm6_nGdHfTduH8sx1LwWZ2vbOB45NxyDqjV6_nGdE_w__WDg"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 min-h-screen islamic-pattern px-6">
+<!-- Page Header -->
+<div class="mb-12">
+<span class="text-secondary font-bold tracking-[0.1em] uppercase text-[10px] mb-2 block">اتجاه الصلاة</span>
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tight leading-tight">القبلة</h2>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 items-center justify-center max-w-6xl mx-auto">
+<!-- Interactive Compass Section -->
+<div class="relative w-full max-w-[400px] aspect-square flex items-center justify-center">
+<!-- Outer Ring Decor -->
+<div class="absolute inset-0 border-[1px] border-primary/5 rounded-full"></div>
+<div class="absolute inset-4 border-[2px] border-secondary/10 rounded-full"></div>
+<!-- Main Compass Circle -->
+<div class="relative w-[320px] h-[320px] bg-surface-container-lowest rounded-full shadow-[0_20px_60px_-10px_rgba(0,50,41,0.12)] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 compass-dial animate-[spin_60s_linear_infinite]"></div>
+<!-- Degree Markers -->
+<div class="absolute inset-8 rounded-full border border-outline-variant/20"></div>
+<!-- Compass Face -->
+<div class="relative w-full h-full flex items-center justify-center">
+<span class="absolute top-4 font-bold text-primary text-sm">ش</span>
+<span class="absolute right-4 font-bold text-outline-variant text-sm">ق</span>
+<span class="absolute bottom-4 font-bold text-outline-variant text-sm">ج</span>
+<span class="absolute left-4 font-bold text-outline-variant text-sm">غ</span>
+<!-- Kaaba Pointer (The Golden Path) -->
+<div class="absolute w-full h-full flex items-center justify-center transform rotate-[145deg]">
+<div class="relative w-2 h-48 -top-12">
+<div class="w-full h-1/2 bg-gradient-to-t from-secondary to-tertiary-container rounded-t-full shadow-[0_0_15px_rgba(119,90,25,0.4)]"></div>
+<div class="w-full h-1/2 bg-surface-container-highest rounded-b-full"></div>
+<!-- Kaaba Icon -->
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-primary p-2 rounded-lg shadow-lg">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="mosque" style="font-variation-settings: 'FILL' 1;">mosque</span>
+</div>
+</div>
+</div>
+<!-- Center Point -->
+<div class="w-6 h-6 bg-primary border-4 border-surface rounded-full z-10 shadow-md"></div>
+</div>
+</div>
+<!-- Degree Badge -->
+<div class="absolute bottom-[-20px] left-1/2 -translate-x-1/2 bg-primary px-6 py-3 rounded-full shadow-xl">
+<span class="text-on-primary font-noto-serif text-2xl font-bold tracking-widest" dir="ltr">145.2°</span>
+</div>
+</div>
+<!-- Info & Controls Bento Section -->
+<div class="w-full max-w-md space-y-4">
+<!-- Location Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0_8px_30px_rgba(0,50,41,0.04)] border border-outline-variant/10">
+<div class="flex items-start justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="bg-primary/5 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="font-bold text-primary">الموقع الحالي</h3>
+<p class="text-sm text-on-surface-variant">دبي، الإمارات العربية المتحدة</p>
+</div>
+</div>
+<button class="text-secondary text-xs font-bold uppercase tracking-wider">تغيير</button>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-6">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">خط العرض</p>
+<p class="font-bold text-primary" dir="ltr">25.2048° N</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">خط الطول</p>
+<p class="font-bold text-primary" dir="ltr">55.2708° E</p>
+</div>
+</div>
+</div>
+<!-- Calibration Card -->
+<div class="bg-primary-container p-6 rounded-xl relative overflow-hidden group">
+<!-- Subtle pattern overlay -->
+<div class="absolute inset-0 opacity-10 islamic-pattern"></div>
+<div class="relative z-10">
+<h3 class="text-on-primary-container font-headline text-xl mb-2">دقة المستشعر</h3>
+<div class="flex items-center gap-2 mb-4">
+<div class="flex gap-1 flex-row-reverse">
+<div class="w-1.5 h-4 bg-secondary rounded-full"></div>
+<div class="w-1.5 h-4 bg-secondary rounded-full"></div>
+<div class="w-1.5 h-4 bg-secondary rounded-full"></div>
+<div class="w-1.5 h-4 bg-surface/30 rounded-full"></div>
+</div>
+<span class="text-xs text-on-primary-container/80 font-medium">دقة جيدة</span>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-3 px-6 rounded-full flex items-center justify-center gap-2 transition-all hover:bg-primary-fixed-dim hover:text-on-primary-fixed active:scale-95">
+<span class="material-symbols-outlined text-xl" data-icon="sync">sync</span>
+                        معايرة البوصلة
+                    </button>
+</div>
+</div>
+<!-- Helpful Tips -->
+<div class="flex items-center gap-3 px-4 py-2 opacity-60">
+<span class="material-symbols-outlined text-sm" data-icon="info">info</span>
+<p class="text-xs">ضع هاتفك بشكل مسطح وحركه في نمط الرقم 8 لمعايرة المستشعرات.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Sacred Bar (Prayer Times) -->
+<div class="fixed bottom-24 left-6 right-6 z-40 bg-surface-container-lowest/85 backdrop-blur-xl rounded-2xl p-4 shadow-[0_12px_40px_-4px_rgba(0,50,41,0.1)] flex items-center justify-between border border-secondary/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-secondary-container rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="light_mode">light_mode</span>
+</div>
+<div>
+<p class="text-[10px] font-bold uppercase tracking-widest text-secondary">الصلاة القادمة</p>
+<h4 class="font-headline font-bold text-primary text-lg">الظهر</h4>
+</div>
+</div>
+<div class="text-left">
+<p class="text-2xl font-headline font-bold text-primary" dir="ltr">12:21</p>
+<p class="text-[10px] text-on-surface-variant">بعد ساعة و 42 دقيقة</p>
+</div>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-emerald-950/85 backdrop-blur-xl dark:bg-emerald-900/90 rounded-t-[1.5rem] z-50 flex justify-around items-center px-4 pb-safe shadow-[0_-12px_40px_-4px_rgba(0,50,41,0.1)]">
+<a class="flex flex-col items-center justify-center text-emerald-200/60 px-4 py-1.5 hover:text-amber-200 transition-all active:scale-90 duration-200" href="./index.html">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-plus-jakarta text-[10px] font-medium uppercase tracking-widest">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-200/60 px-4 py-1.5 hover:text-amber-200 transition-all active:scale-90 duration-200" href="./Quran.html">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span class="font-plus-jakarta text-[10px] font-medium uppercase tracking-widest">القرآن</span>
+</a>
+<a class="flex flex-col items-center justify-center text-amber-400 bg-emerald-800/50 rounded-2xl px-4 py-1.5 active:scale-90 duration-200" href="./Qibla.html">
+<span class="material-symbols-outlined mb-1" data-icon="explore" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-plus-jakarta text-[10px] font-medium uppercase tracking-widest">القبلة</span>
+</a>
+<a class="flex flex-col items-center justify-center text-emerald-200/60 px-4 py-1.5 hover:text-amber-200 transition-all active:scale-90 duration-200" href="./Settings.html">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-plus-jakarta text-[10px] font-medium uppercase tracking-widest">الإعدادات</span>
+</a>
+</nav>
+</body></html>
